@@ -1,10 +1,96 @@
+<!DOCTYPE html> -->
+<html lang="en">
+  <head>
+    <title>Donate Books</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css"
+  </head>
+  <body id="Home" data-spy="scroll" data-target=".navbar"  data-offset="100">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Donate Books</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="#Donate">Donate</a>
+      <a class="nav-item nav-link" href="#available books">All Available books</a>
+    </div>
+  </div>
+</nav>
+<nav class="navbar navbar-light bg-light">
+  <form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>
+</nav>
 <div class="jumbotron jumbotron-fluid bg-info text-white">
       <div class="container text-sm-center pt-5">
-        <h1 class="display-2">Donate A Book</h1>
-        <p class="lead"> A Place where you can share books..</p>
+        <h1 class="display-2">Donate Books</h1>
+        <p class="lead">A One Stop Shop For Giving And Recieving Books For Free.</p>
         <div class="btn-group mt-4" role="group" aria-label="Callout buttons">
-      <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#new_user">Donate Books</button>
-      <a class="btn btn-light btn-lg" href="#books">See Books</a>
+      <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#donate">Donate Now</button>
+      <a class="btn btn-light btn-lg" href="#books">See books</a>
         </div>
       </div>
     </div>
+    <div class="modal fade" id="Donate" tabindex="-1" role="dialog" aria-labelledby="donate form" aria-hidden="true">
+  <div class="modal-dialog " role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-info text-white">
+        <h5 class="modal-title" id="Donate">Donate A Book</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+<div class="modal-body">
+  <div class="container-fluid">
+
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+         <strong>Hurry!</strong> Early bird registration ends in 2 days.
+         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+           <span aria-hidden="true">&times;</span>
+         </button>
+       </div>
+       <h5 class="mb-4">Basic Info</h5>
+       <div class="form-group">
+         <label for="name">Name</label>
+         <input type="text" class="form-control" id="name" >
+       </div>
+       <div class="form-group">
+         <label for="email">Email</label>
+         <input type="email" class="form-control" id="email" >
+       </div>
+       <div class="form-group">
+         <lable for="genre"> Genre:</lable>
+         <select class=" custom-select for-control" id="genre">
+           <option value="Horror">Horror</option>
+           <option value="Crime">Crime</option>
+           <option value="Suspense">Suspense</option>
+           <option value="Sci-fi">Sci-fi</option>
+           <option value="RomCom">RomCom</option>
+         </select>
+      </div>
+      <hr class="mb-4">
+          <h5 class="mb-4">Book Criteria</h5>
+          <div class="form-row">
+            <div class="col-lg-6 form-group">
+              <label for="book name">Title:</label>
+              <input class="form-control" id="title" type="text">
+            </div>
+
+            <div class="col-lg form-group">
+              <label for="author">Author:</label>
+              <input class="form-control" id="author" type="text">
+            </div>
+
+            <div class="col-lg form-group">
+              <label for="prolougue">prolouge:</label>
+              <input class="form-control" id="brief_prolong" type="text">
+            </div>
+          </div>
