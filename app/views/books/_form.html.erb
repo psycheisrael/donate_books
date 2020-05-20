@@ -26,7 +26,7 @@
       <div class="field">
         <%= form.label :genre %>
         <%= form.text_field :genre, class: "form-group"  %>
-      </div><br>
+      </div>
 
       <div class="field">
         <%= form.label :title %>
@@ -37,6 +37,12 @@
         <%= form.label :copies_available %>
         <%= form.number_field :copies_available, class: "form-group"  %>
       </div><br>
+
+      <div class="field">
+        <%= form.label :user %>
+        <%= form.collection_select :user_id, User.all, :id, :full_name, include_blank: true %>
+      </div><br<
+
 
       <div class="actions">
         <%= form.submit "Submit", class: "btn btn-primary" %>
