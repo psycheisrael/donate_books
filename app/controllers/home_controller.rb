@@ -1,4 +1,4 @@
 class HomeController < ApplicationController
-  def inddex
+  def index
   end
 end
