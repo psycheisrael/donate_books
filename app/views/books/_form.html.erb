@@ -1,42 +1,46 @@
-<%= form_with(model: book, local: true) do |form| %>
-  <% if book.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(book.errors.count, "error") %> prohibited this book from being saved:</h2>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_with(model: book, local: true) do |form| %>
+      <% if book.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(book.errors.count, "error") %> prohibited this book from being saved:</h2>
 
-      <ul>
-      <% book.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
+          <ul>
+          <% book.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+          </ul>
+        </div>
       <% end %>
-      </ul>
-    </div>
-  <% end %>
 
-  <div class="field">
-    <%= form.label :availability %>
-    <%= form.check_box :availability %>
-  </div>
+      <div class="field">
+        <%= form.label :availability %>
+        <%= form.check_box :availability, class: "form-group"   %>
+      </div><br>
 
-  <div class="field">
-    <%= form.label :author %>
-    <%= form.text_field :author %>
-  </div>
+      <div class="field">
+        <%= form.label :author %>
+        <%= form.text_field :author, class: "form-group" %>
+      </div><br>
 
-  <div class="field">
-    <%= form.label :genre %>
-    <%= form.text_field :genre %>
-  </div>
+      <div class="field">
+        <%= form.label :genre %>
+        <%= form.text_field :genre, class: "form-group"  %>
+      </div><br>
 
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
-  </div>
+      <div class="field">
+        <%= form.label :title %>
+        <%= form.text_field :title, class: "form-group"  %>
+      </div><br>
 
-  <div class="field">
-    <%= form.label :copies_available %>
-    <%= form.number_field :copies_available %>
-  </div>
+      <div class="field">
+        <%= form.label :copies_available %>
+        <%= form.number_field :copies_available, class: "form-group"  %>
+      </div><br>
 
-  <div class="actions">
-    <%= form.submit %>
+      <div class="actions">
+        <%= form.submit "Submit", class: "btn btn-primary" %>
+      </div>
+    <% end %>
   </div>
-<% end %>
+</div>
