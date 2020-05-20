@@ -9,27 +9,6 @@
   <strong>Email:</strong>
   <%= @user.email %>
 </p>
-
-<p>
-  <strong>Number of books:</strong>
-  <%= @user.number_of_books %>
-</p>
-
-<p>
-  <strong>Author:</strong>
-  <%= @user.author %>
-</p>
-
-<p>
-  <strong>Title:</strong>
-  <%= @user.title %>
-</p>
-
-<p>
-  <strong>Brief prolong:</strong>
-  <%= @user.brief_prolong %>
-</p>
-
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
 <%= link_to 'Books', books_path %>
