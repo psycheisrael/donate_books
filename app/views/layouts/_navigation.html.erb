@@ -1,26 +1,28 @@
 <body id="Home" data-spy="scroll" data-target=".navbar"  data-offset="100">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-<a class="navbar-brand" href=<%= books_path%>>Donate Books</a>
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-  <span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-  <div class="navbar-nav">
-    <a class="nav-item nav-link" href=<%= new_user_path %>>Donate</a>
-    <a class="nav-item nav-link" href=<%= books_path%>>All Available books</a>
-    <form class="form-inline">
-      <input class="form-control mr-sm-2 my-lg-0 " type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-5 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</div>
-</nav>
-<title>Donate Books</title>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href=<%= books_path%>>Donate Books</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href=<%= new_user_path %>>New User</a>
+        <a class="nav-item nav-link" href=<%= users_path %>>See Donors</a>
+        <a class="nav-item nav-link" href=<%= new_book_path %>>Add books</a>
+        <a class="nav-item nav-link" href=<%= books_path %>>See What's Available</a>
+        <form class="form-inline">
+          <input class="form-control mr-sm-2 my-lg-0 " type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-5 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <title>Donate Books</title>
 
-<div class="jumbotron jumbotron-fluid bg-info text-white">
-  <div class="text-lg-center">
-    <h1 class="display-1">Donate Books</h1>
-    <p class="lead text-certer">A One Stop Shop For Giving And Recieving Books For Free.</p>
+  <div class="jumbotron jumbotron-fluid bg-info text-white">
+    <div class="text-lg-center">
+      <h1 class="display-1">Donate Books</h1>
+      <p class="lead text-certer">A One Stop Shop For Giving And Receiving Books For Free.</p>
+    </div>
   </div>
-</div>
 </body>
