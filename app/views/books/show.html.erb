@@ -1,3 +1,4 @@
+<div class="page">
 <p id="notice" ><%= notice %></p>
 
 <p>
@@ -23,7 +24,8 @@
 <p>
   <strong>Copies Available</strong>
   <%= @book.copies_available %>
-</p>
+</p><br>
 
-<%= link_to 'Edit', edit_book_path(@book) %> |
-<%= link_to 'Back', books_path %>
+<%= link_to 'Edit', edit_book_path(@book), class: "btn btn-primary" %><br>
+<%= link_to 'Back', books_path, class: "btn btn-primary" %>
+</div>

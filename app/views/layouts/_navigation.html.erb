@@ -4,16 +4,12 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="collapse navbar-collapse bg-light" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-item nav-link" href=<%= new_user_path %>>New User</a>
         <a class="nav-item nav-link" href=<%= users_path %>>See Donors</a>
         <a class="nav-item nav-link" href=<%= new_book_path %>>Add books</a>
         <a class="nav-item nav-link" href=<%= books_path %>>See What's Available</a>
-        <form class="form-inline">
-          <input class="form-control mr-sm-2 my-lg-0 " type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-5 my-sm-0" type="submit">Search</button>
-        </form>
       </div>
     </div>
   </nav>
