@@ -3,22 +3,22 @@
 
 <p>
   <strong class="lead">Availability</strong>
-  <%= @book.availability %>
+  <%= @book.availability.to_s.capitalize %>
 </p>
 
 <p>
   <strong>Author</strong>
-  <%= @book.author %>
+  <%= @book.author.to_s.capitalize %>
 </p>
 
 <p>
   <strong>Genre</strong>
-  <%= @book.genre %>
+  <%= @book.genre.to_s.capitalize %>
 </p>
 
 <p>
   <strong>Title</strong>
-  <%= @book.title %>
+  <%= @book.title.to_s.capitalize %>
 </p>
 
 <p>
