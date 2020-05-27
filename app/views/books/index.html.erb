@@ -19,7 +19,7 @@
     <% @books.each do |book| %>
       <tr>
         <td><%= book.availability.to_s.capitalize %></td>
-        <td><%= book.author.to_s.capitalize %></td>
+        <td><%= book.author %></td>
         <td><%= book.genre.to_s.capitalize %></td>
         <td><%= book.title.to_s.capitalize %></td>
         <td><%= book.copies_available %></td>
