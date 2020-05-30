@@ -19,8 +19,7 @@ body {
   color: black;
   font-family: Arial;
   background-size: auto;
-  // background-image: url('https://images6.alphacoders.com/330/330109.jpg');
-  background-color: inherit;
+  background-image: url('https://images6.alphacoders.com/330/330109.jpg');
 }
 
 #notice {
@@ -76,6 +75,7 @@ label {
   cursor: pointer;
   float: right;
   margin: auto;
+  column-count: 4;
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
@@ -84,4 +84,14 @@ label {
     width: 100%;
     margin-top: 0;
   }
+}
+.form{
+
+}
+
+.show {
+  margin: auto;
+  width: 40%;
+  border: 3px;
+  padding: 10px;
 }

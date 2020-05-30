@@ -1,31 +1,32 @@
-<div class="page">
-<p id="notice" ><%= notice %></p>
+<div class="show">
+  <p id="notice" ><%= notice %></p>
 
-<p>
-  <strong class="lead">Availability</strong>
-  <%= @book.availability.to_s.capitalize %>
-</p>
+  <p>
+    <strong class="lead">Availability</strong><br>
+    <%= @book.availability.to_s.capitalize %>
+  </p>
 
-<p>
-  <strong>Author</strong>
-  <%= @book.author %>
-</p>
+  <p>
+    <strong>Author</strong><br>
+    <%= @book.author %>
+  </p>
 
-<p>
-  <strong>Genre</strong>
-  <%= @book.genre.to_s.capitalize %>
-</p>
+  <p>
+    <strong>Genre</strong><br>
+    <%= @book.genre.to_s.capitalize %>
+  </p>
 
-<p>
-  <strong>Title</strong>
-  <%= @book.title.to_s.capitalize %>
-</p>
+  <p>
+    <strong>Title</strong><br>
+    <%= @book.title.to_s.capitalize %>
+  </p>
 
-<p>
-  <strong>Copies Available</strong>
-  <%= @book.copies_available %>
-</p><br>
+  <p>
+    <strong>Copies Available</strong><br>
+    <%= @book.copies_available %>
+  </p><br>
 
-<%= link_to 'Edit', edit_book_path(@book), class: "btn btn-primary" %><br>
-<%= link_to 'Back', books_path, class: "btn btn-primary" %><br>
+  <%= link_to 'Edit', edit_book_path(@book), class: "btn btn-primary" %>
+
+  <%= link_to 'Back', books_path, class: "btn btn-primary" %>
 </div>
