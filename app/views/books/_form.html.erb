@@ -1,3 +1,4 @@
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
     <%= form_with(model: book, local: true) do |form| %>
@@ -14,28 +15,28 @@
       <% end %>
 
       <div class="field">
-        <%= form.label :availability %>
+        <%= form.label :availability, class: "btn btn-info" %>
         <%= form.check_box :availability, class: "form-group"   %>
-      </div>
-
-      <div class="form-group">
-        <%= form.label :author %>
-        <%= form.text_field :author, class: " form-inline" %>
-      </div>
+      </div><br>
 
       <div class="field">
-        <%= form.label :genre %>
-        <%= form.text_field :genre, class: "form-inline"  %>
-      </div>
+        <%= form.label :author, class: "btn btn-info" %>
+        <%= form.text_field :author, class: "form-control" %>
+      </div><br>
 
       <div class="field">
-        <%= form.label :title %>
-        <%= form.text_field :title, class: "form-inline"  %>
-      </div>
+        <%= form.label :genre, class: "btn btn-info center-block" %>
+        <%= form.text_field :genre, class: "form-control center-block"   %>
+      </div><br>
 
       <div class="field">
-        <%= form.label :copies_available %>
-        <%= form.number_field :copies_available, class: "form-inline"  %>
+        <%= form.label :title, class: "btn btn-info" %>
+        <%= form.text_field :title, class: "form-control"  %>
+      </div><br>
+
+      <div class="field">
+        <%= form.label :copies_available, class: "btn btn-info" %>
+        <%= form.number_field :copies_available, class: "form-control"  %>
       </div><br>
 
       <div class="field">
